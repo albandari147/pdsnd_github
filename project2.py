@@ -5,7 +5,10 @@ Spyder Editor
 This is a temporary script file.
 """
 
-import time
+#import packages
+
+
+import time 
 import pandas as pd
 import numpy as np
 CITY_DATA = { 'chicago': 'chicago.csv',
