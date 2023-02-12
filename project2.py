@@ -26,7 +26,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data!') #print statment 
     
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     
@@ -75,7 +75,7 @@ def load_data(city, month, day):
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
     # extract month and day of week from Start Time to create new columns
-    df['month'] = df['Start Time'].dt.month
+    df['month'] = df['Start Time'].dt.month 
     df['day_of_week'] = df['Start Time'].dt.day_name() # in file (weekday_name)
 
     # filter by month if applicable
@@ -199,6 +199,8 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+#create while statment
+
         x=0
         y=5
         while True:
